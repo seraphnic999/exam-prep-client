@@ -137,6 +137,8 @@ html, body {
   gap: 12px;
   position: relative;
   overflow: hidden;
+  color: var(--text);
+  text-align: right;
 }
 .subject-card::before {
   content: '';
@@ -149,7 +151,7 @@ html, body {
 .subject-card:hover { transform: translateY(-4px); border-color: var(--accent); box-shadow: 0 12px 40px rgba(108,140,255,0.2); }
 .subject-card:hover::before { opacity: 0.06; }
 .subject-emoji { font-size: 36px; position: relative; }
-.subject-name { font-family: 'Rubik', sans-serif; font-size: 20px; font-weight: 700; position: relative; }
+.subject-name { font-family: 'Rubik', sans-serif; font-size: 20px; font-weight: 700; position: relative; color: var(--text); }
 .subject-meta { font-size: 13px; color: var(--text2); position: relative; }
 
 .topic-list { display: flex; flex-direction: column; gap: 12px; margin-bottom: 28px; }
@@ -182,7 +184,7 @@ html, body {
   position: relative;
 }
 .topic-check::after {
-  content: '✓';
+  content: '\u2713';
   position: absolute;
   inset: 0;
   display: flex;
