@@ -184,7 +184,7 @@ html, body {
   position: relative;
 }
 .topic-check::after {
-  content: '\u2713';
+  content: "\2713";
   position: absolute;
   inset: 0;
   display: flex;
